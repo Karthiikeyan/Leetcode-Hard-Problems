@@ -8,8 +8,7 @@ public:
             int lastCh = n + 1;
             for(int j=0;j<n;j++){
                 if(s[j]==i) lastCh = j;
-                int startInd = lastCh;
-                if(startInd <= j) ans += (startInd + 1);
+                if(lastCh <= j) ans += (lastCh + 1);
             }
         }
         return ans;
